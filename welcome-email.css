@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Arial, sans-serif;
+  width: 100%;
+  background-color: #F9F9F9;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+header {
+  width: 100%;
+  padding: 0px 112px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+nav {
+  background-color: white;
+  height: 101px;
+  width: 100%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.btn-exit{
+  width: 110px;
+  height: 40px;
+  top: 27px;
+  left: 1121px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 50px;
+  border: 2px solid #548BAB;
+  background-color: white;
+  color: #548BAB;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+.btn-exit:hover {
+  background-color: #548BAB;
+  color: white;
+}
+
+
+.btn-exit:active {
+  background-color: #0E6EB8;
+  border-color: #0E6EB8;
+}
+
+/* -------job listing-------- */
+
+.job-listing {
+  width: 100%;
+  max-width: 497px;
+  margin: 2px 0 0;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Adjust as needed */
+  overflow-y: scroll;
+  height: 89vh;
+
+  /* WebKit */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit (Chrome, Safari) */
+}
+}
+
+
+.job-title {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', Times, serif;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+
+.location {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', Times, serif;
+  font-weight: 600;
+  line-height: 21px;
+  color: #C9DFEE;
+
+}
+
+
+.salary {
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', Times, serif;
+  font-weight: 600;
+  line-height: 21px;
+  color: #C9DFEE;
+
+}
+/* Styling for the line */
+.underline {
+  border: none;
+  border-top: 1px solid #F2F1EE; 
+  margin-top: 8px;
+  margin-bottom: 10px;
+  margin-left: -35px;
+  width: 510px;
+}
+
+
+.job-details {
+  margin-bottom: 20px;
+}
+
+.job-details ul {
+  padding-inline-start: 20px; /* Adjust this value as needed */
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.subheading {
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 21px;
+  font-family: 'Open Sans', Times, serif;
+}
+
+.subheading_par {
+  font-size: 14px;
+  /* margin-top: 30px; */
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: 'Inter', Times, serif;
+}
+
+
+/* ----------------Job Application-------------------- */
+
+.container {
+  position: relative; /* Ensure the container is positioned relatively */
+  display: flex;
+}
+
+.rContainer {
+  width: 863px;
+  position: relative;
+  margin-right: auto;
+  padding: 40px;
+}
+
+.Job{
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 28px;
+  color: #000000;
+  line-height: 35.56px;
+  letter-spacing: -0.02em;
+}
+
+.steps {
+  position: relative;
+  font-family: 'Montserrat', Times, serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #aeaeae;
+  padding-bottom: 5px;
+  margin-right: -130px;
+}
+
+.steps::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; /* Adjust thickness as needed */
+  background: linear-gradient(to right, #C9DFEE 50%, #E5E6E2 50%);
+}
+ 
+.back_steps {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+/* ----------------Applying with accounts------------------------ */
+
+.applying {
+  padding-top: 5%;
+  font-family: 'Montserrat', Times, serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #12263F;
+}
+.auto{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #000000 !important;
+  font-family: 'Inter';
+}
+
+.btn-linked {
+  width: 192.61px;
+  height: 60px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: white;
+  border: 2px solid white; /* Specify border style and color */
+  cursor: pointer;
+  margin-top: 35px;
+}
+
+.btn-linked:hover {
+  border-color: #548BAB; /* Change 'blue' to the desired border color */
+}
+/*----------For line----*/
+.line{
+  width: 940px;
+  margin-top: 30px;
+  border: 1px solid #E5E6E2;
+
+}
+/*------apply with your email--------*/
+.apply{
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+  letter-spacing: -0.02em;
+  height: 23px;
+  padding-top: 5%;
+} 
+.EmailAddress {
+  position: relative;
+  display: inline-block;
+  justify-content: center; 
+}
+
+.EmailAdd {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #AEAEAA;
+  padding-bottom: 10px;
+}
+
+.button-right {
+  border-radius: 25px; 
+  background: #0ACF83;
+  color: white;
+  padding: 4px 10px;
+  width: 93px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 600;
+  text-align: right;
+  border: none !important;
+  height: 29px;
+}
+.button-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.inputEmailAdd {
+  border: 1px solid #AEAEAA;
+  width: 350px;
+  height: 40px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+  border-radius: 50px;
+  text-align: left;
+  padding-left: 10px; 
+}
+
+.inputEmailContact {
+  display: flex;
+  gap: 15px;
+  padding-top: 5%;
+  margin-top: 30px;
+}
+
+/*---------------Two button------------------*/
+
+.two-button{
+  width: Hug (338px)px;
+  height: Hug (40px)px;
+  margin-top: 40px;
+  gap: 10px;
+  opacity: 0px;
+}
+.continue, .guest{
+  width: 164px;
+  height: 40px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 50px;
+  background-color: white;
+  border: 2px solid  #548BAB;
+  color: #548BAB;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+.two-button button {
+  margin: 0 5px; 
+}
+.guest:hover {
+  background-color: #548BAB;
+  color: white;
+}
+.guest:active {
+  background-color: #0E6EB8;
+  border-color: #0E6EB8;
+}
+.continue:hover {
+  background-color: #548BAB;
+  color: white;
+}
+.continue:active {
+  background-color: #0E6EB8;
+  border-color: #0E6EB8;
+}
+/*------------Footer-----------------*/
+.bott {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bott1 {
+  margin-right: auto;
+  width: auto;
+  height: 50px;
+  margin-left: 50px;
+}
+
+.bott2 {
+  margin-left: auto;
+  margin-right: 50px ;
+}
