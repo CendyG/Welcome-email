@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
   var emailInput = document.getElementById("emailInput");
-  var buttonRight = document.querySelector(".button-right");
+  var welcome = document.querySelector(".welcome");
 
   emailInput.addEventListener("input", function() {
     if (emailInput.value.trim() !== "") {
-      buttonRight.style.display = "inline-block";
+      welcome.style.display = "inline-block";
     } else {
-      buttonRight.style.display = "none";
+      welcome.style.display = "none";
     }
   });
 });
